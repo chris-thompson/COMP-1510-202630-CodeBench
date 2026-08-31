@@ -53,15 +53,6 @@ def main():
 
     print('-' * 25)
 
-    some_numbers = {'one': 1, 'two': 2}
-    print(some_numbers)
-    print(type(some_numbers))
-    print(some_numbers['two'])
-    some_numbers['three'] = 3
-    print(some_numbers)
-    del some_numbers['two']
-    print(some_numbers)
-
     seasons = {'Spring': ('Mar', 'Apr', 'May'),
                'Summer': ('June', 'July', 'August'),
                'Autumn': ('September', 'October', 'November'),
@@ -71,22 +62,12 @@ def main():
 
     print('-' * 25)
 
-    print(some_numbers.keys())
-    print(some_numbers.values())
-
-    for value in some_numbers.values():
-        print(value)
-
-    print(some_numbers.items())
-
-    some_numbers['four'] = 4
-    print(some_numbers.keys())
-    print(sorted(some_numbers.keys()))
+    print(sorted(cities.keys()))
 
     key = 'Alberta'
 
     if key in cities:
-        print('Key is present, value = ', cities[key])
+        print('Key is present, value =', cities[key])
     else:
         print('Key not present')
 

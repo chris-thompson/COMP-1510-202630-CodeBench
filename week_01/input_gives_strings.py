@@ -1,5 +1,5 @@
 """
-We must remember that when we use the input function the operating system
+We must remember that when we use the input function, the operating system
 will always cause our program to pause and wait for the user to enter a
 value. That value is always passed to the Python runtime as a string.
 
@@ -15,7 +15,6 @@ example if we try to convert "Hello" to an integer, the program will crash
 and produce a ValueError (all that red stuff that gets printed out).
 """
 
-
 name = input('What is your name? ')
 age = int(input('What is your age? '))
 income = float(input('What is your income? '))
@@ -25,4 +24,3 @@ print('Here is the data you entered:')
 print('Name:', name)
 print('Age:', age)
 print('Income:', income)
-

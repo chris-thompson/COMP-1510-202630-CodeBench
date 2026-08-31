@@ -13,7 +13,6 @@ We do this a lot in programming.
 Some programmers say that the variable points to a new value.
 """
 
-
 dollars = 2.75
 print('I have', dollars, 'in my account.')
 

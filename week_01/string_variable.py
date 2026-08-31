@@ -14,7 +14,6 @@ Everything in Python has an address in memory. That address is what we
 store in variables.
 """
 
-
 # Create variables to reference three strings.
 salutation = "Mrs"
 first_name = 'Irma'
@@ -22,4 +21,3 @@ last_name = 'Gerd'
 
 # Display the values referenced by the variables.
 print(salutation, first_name, last_name)
-

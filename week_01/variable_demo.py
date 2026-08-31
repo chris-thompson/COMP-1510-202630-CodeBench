@@ -14,7 +14,6 @@ We do this because it is easier for humans to remember the word room than it
 is for us to remember a location in memory like 0Xacd8343d0.
 """
 
-
 room = 420
 print('I am staying in room number')
 print(room)

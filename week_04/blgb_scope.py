@@ -17,6 +17,7 @@ def outer(outer_parameter='outer_parameter'):
 
     def inner():
         print(global_variable, outer_parameter, local_variable_in_outer)
+
     return inner()
 
 

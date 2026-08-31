@@ -13,7 +13,8 @@ def main():
     some_incremented_integers = [item + 1 for item in some_integers]
     print('some_incremented_integers:', some_incremented_integers)
 
-    some_incremented_even_integers = [item + 1 for item in some_integers if item % 2 == 0]
+    some_incremented_even_integers = [item + 1 for item in some_integers
+                                      if item % 2 == 0]
     print('some_incremented_even_integers:', some_incremented_even_integers)
 
 

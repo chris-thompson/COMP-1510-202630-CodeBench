@@ -9,7 +9,6 @@ often need to do this when receiving JSON information passed from
 a server to a client on the web.
 """
 
-
 import json
 
 
@@ -17,7 +16,8 @@ def main():
     """
     Drive the program.
     """
-    string_of_json_data = '{"name": "Larry", "isCat": true, "miceCaught": 0, "felineIQ": null}'
+    string_of_json_data = ('{"name": "Larry", "isCat": true, '
+                           '"miceCaught": 0, "felineIQ": null}')
     python_dictionary = json.loads(string_of_json_data)
     print(type(python_dictionary))
     print(python_dictionary)

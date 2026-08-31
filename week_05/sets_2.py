@@ -1,5 +1,8 @@
 """
-Working with sets.
+Set algebra with the operator shorthand.
+
+The operators |, &, -, and ^ are shorthand for the union(),
+intersection(), difference(), and symmetric_difference() methods.
 """
 
 

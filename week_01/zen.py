@@ -1,5 +1,6 @@
 """
-We can print multi-line strings if we wrap the multi-line string in triple single-quotes.
+We can print multi-line strings if we wrap the multi-line string in
+triple single-quotes.
 """
 
 print('''The Zen of Python, by Tim Peters

@@ -8,7 +8,6 @@ We have to use the int function to "cast" the string (convert it) to
 an integer if we want to store it and use it like an integer.
 """
 
-
 # Get the desired future value.
 future_value = float(input('Enter the desired future value: '))
 

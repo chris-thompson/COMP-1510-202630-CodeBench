@@ -1,12 +1,13 @@
 """
-We raise errors in functions when we want the caller (user) to deal with the problem.
+We raise errors in functions when we want the caller (user) to deal with the
+problem.
 
-The caller (user) of the function must use try-except to deal with it and prevent
-the program from crashing.
+The caller (user) of the function must use try-except to deal with it and
+prevent the program from crashing.
 """
 
 
-def capitalize_name(name):
+def capitalize_name(name: str) -> str:
     """
     Capitalize the name. Uses title case.
 
@@ -38,6 +39,8 @@ def main():
     else:
         print(another_capitalized_name)
 
+    # This last call is deliberately left unprotected. Run the program and
+    # read the traceback: this is exactly what your user must never see.
     print(capitalize_name(""))
 
 

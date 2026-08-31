@@ -13,7 +13,7 @@ That's what we are doing here!
 
 
 def running_sum(values):
-    """Modify values so that it contains the running sums of its original items.
+    """Modify values to contain the running sums of its original items.
 
     :param values: a possibly empty list of integers
     :precondition: values is a list that contains only integers
@@ -37,6 +37,3 @@ def running_sum(values):
     """
     for element in range(1, len(values)):
         values[element] = values[element - 1] + values[element]
-
-
-print(running_sum([]))

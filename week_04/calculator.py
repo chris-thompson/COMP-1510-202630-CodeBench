@@ -5,7 +5,7 @@ other functions!
 A function that has been defined in a source file will be given an
 address in memory just like a variable or an object. We can use the
 function's address to treat it like an object. We can store it in a
-variable or we can pass it to another function.
+variable, or we can pass it to another function.
 
 We say that in Python functions are "first class." This is a computing
 expression that many programmers use. It means we can pass functions

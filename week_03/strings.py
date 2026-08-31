@@ -8,7 +8,8 @@ def main():
     Drive the program.
     """
     print("Able was I ere I saw Elba")
-    print("Sweatpants are a sign of defeat. You gave up, and you bought some sweatpants.")
+    print("Sweatpants are a sign of defeat. You gave up, and you "
+          + "bought some sweatpants.")
 
     string_1 = 'Good'
     string_2 = " day"
@@ -32,14 +33,7 @@ def main():
 
     greeting = 'hello world'
     print(greeting[4])
-    print(greeting[1:5])
-    print(greeting[:5])
-    print(greeting[2:])
-
     print(greeting.upper())
-
-    print(type(b'abc'))
-    print(b'abc')
 
     title = 'The Good, The Bad, and the Resourceful'
     print('Source string:', title)

@@ -1,5 +1,14 @@
 """
-This is something new.  TextIO! and typing!
+This is something new. TextIO! and typing!
+
+sum_number_pairs never calls open. It is handed two already-open file
+objects, so it does not care where they came from. That is what the TextIO
+annotation means: "any text stream".
+
+Read this file first, then read total_stringio.py. The function is
+identical. The only difference is that total_stringio.py exploits the fact
+that the function accepts any text stream in order to doctest it without
+touching the disk at all.
 """
 
 from typing import TextIO

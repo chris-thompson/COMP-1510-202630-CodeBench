@@ -5,44 +5,48 @@ Some fun looping exercises for you. Implement the code!
 
 def get_user_input():
     """
-    Get user input using a sentinel while loop, and return a list of string when QUIT is typed.
+    Get user input using a sentinel while loop, and return a list of
+    string when QUIT is typed.
     """
     pass
 
 
 def print_using_for(any_old_list):
     """
-    Iterate over the list, and print it out one item per line, using a for item in loop.
+    Iterate over the list, and print it out one item per line, using a
+    for item in loop.
     """
     pass
 
 
 def print_using_range(any_old_list):
     """
-    Iterate over the list, and print it out one item per line, using a loop with a range.
+    Iterate over the list, and print it out one item per line, using a
+    loop with a range.
     """
     pass
 
 
 def print_using_while(word_list):
     """
-    Iterate over the list, and print it out one item per line, using a while loop and a list index.
+    Iterate over the list, and print it out one item per line, using a
+    while loop and a list index.
     """
     pass
 
 
 def print_in_reverse(word_list):
     """
-    Iterate over the list, and print it out one item per line in reverse order, using a while loop
-    and a list index.
+    Iterate over the list, and print it out one item per line in reverse
+    order, using a while loop and a list index.
     """
     pass
 
 
 def long_word(word_list):
     """
-    Iterate over the list, return the length of the longest word in the list, using a for item
-    in loop
+    Iterate over the list, return the length of the longest word in the
+    list, using a for item in loop
     """
     pass
 
@@ -71,16 +75,7 @@ def unique_words(word_list):
     return []
 
 
-def word_counts(word_list):
-    """
-    Iterate over the list, create and return a dictionary that has a count of
-    the number of times each word occurs in the list
-    """
-    return {}
-
-
 def tests():
-
     a_list = get_user_input()
     print("Test 1: a_list=", a_list)
 
@@ -97,25 +92,24 @@ def tests():
     print_in_reverse(a_list)
 
     lng = long_word(a_list)
-    print("\nTest 6: longest word has %i chars" % lng)
+    print(f"\nTest 6: longest word has {lng} chars")
 
     sht = short_word(a_list)
-    print("\nTest 7: shortest word has %i chars" % sht)
+    print(f"\nTest 7: shortest word has {sht} chars")
 
     avg = avg_word_length(a_list)
-    print("\nTest 8: avg word length is %.1f" % avg)
+    print(f"\nTest 8: avg word length is {avg:.1f}")
 
     ul = unique_words(a_list)
     print("\nTest 9: unique_list =", ul)
 
-    wc = word_counts(a_list)
-    print("\nTest 10: word_counts =", wc)
-
 
 def main():
+    """
+    Drive the tests.
+    """
     tests()
 
 
 if __name__ == "__main__":
     main()
-

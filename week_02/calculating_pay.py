@@ -1,5 +1,14 @@
 """
 Using the if-else statement (an example).
+
+Your employer pays time-and-a-half for any hours worked above 40 in a
+single week. This program reads the hours worked and the hourly pay rate,
+then calculates the gross pay for the week.
+
+The program works like this:
+    Enter the number of hours worked: 44
+    Enter the hourly pay rate: 12.50
+    The gross pay is $575.00
 """
 
 BASE_HOURS = 40  # Base hours per week

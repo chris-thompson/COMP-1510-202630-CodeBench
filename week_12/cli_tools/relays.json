@@ -1,0 +1,38 @@
+[
+  {
+    "name": "HARE-07",
+    "district": "harbour",
+    "signal": 94,
+    "status": "ONLINE"
+  },
+  {
+    "name": "HARE-12",
+    "district": "harbour",
+    "signal": 81,
+    "status": "ONLINE"
+  },
+  {
+    "name": "HARE-19",
+    "district": "harbour",
+    "signal": 37,
+    "status": "DEGRADED"
+  },
+  {
+    "name": "HARE-23",
+    "district": "arcology",
+    "signal": 88,
+    "status": "ONLINE"
+  },
+  {
+    "name": "HARE-31",
+    "district": "arcology",
+    "signal": 63,
+    "status": "ONLINE"
+  },
+  {
+    "name": "HARE-42",
+    "district": "warren",
+    "signal": 97,
+    "status": "ONLINE"
+  }
+]

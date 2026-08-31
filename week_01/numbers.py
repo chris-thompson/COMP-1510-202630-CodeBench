@@ -1,8 +1,14 @@
+"""
+A tour of numbers in Python: integers and floats, the arithmetic operators,
+true division (/) versus integer division (//), the remainder (%), and using
+int() and float() to convert values.
+"""
+
 value = 1
 print(value)
 print(type(value))
 
-value = 10000000000234329857923972011208912865016940000011201237853240149247561223846572348923546134
+value = 10000000000234329857923972011208912865016940000011201237853240149
 print(value)
 print(type(value))
 
@@ -38,7 +44,6 @@ print(first_integer ** second_integer)
 print('Modulus division 4 % 2:', 4 % 2)
 print('Modulus division 3 % 2:', 3 % 2)
 
-
 print('True division 3/2:', 3 / 2)
 print('True division -3/2:', -3 / 2)
 print('Integer division 3//2:', 3 // 2)
@@ -68,7 +73,6 @@ print(type(exchange_rate))
 print(float(1))
 print(int(exchange_rate))
 
-
 print(2.3 + 1.5)
 print(1.5 / 2.3)
 print(1.5 * 2.3)
@@ -79,21 +83,9 @@ print(12.0 // 3.0)
 product = 3 * 0.1
 print(product)
 
-print('+' * 10)
-
-a_sum = 3.2e4 + 0.00002e-6
-format_string = "%16.20g"
-print(format_string % a_sum)
-print(type(a_sum))
-
 print('=' * 10)
 all_ok = True
 print(all_ok)
 all_ok = False
 print(all_ok)
 print(type(all_ok))
-
-print(int(True))
-print(int(False))
-print(bool(1))
-print(bool(0))

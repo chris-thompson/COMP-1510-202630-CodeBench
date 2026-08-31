@@ -26,4 +26,4 @@ else:
             if score >= D_score:
                 print('Your grade is D.')
             else:
-                print('Your grade is F.')  # Oh my gosh my eyes they're bleeding oh the humanityyy
+                print('Your grade is F.')  # Oh my eyes, they're bleeding

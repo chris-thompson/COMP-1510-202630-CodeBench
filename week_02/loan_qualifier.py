@@ -23,10 +23,10 @@ if salary >= MINIMUM_SALARY:
     if years_on_job >= MINIMUM_NUMBER_OF_YEARS:
         print('You qualify for the loan.')
     else:
-        print('You must have been employed'
-              , 'for at least', MINIMUM_NUMBER_OF_YEARS,
+        print('You must have been employed',
+              'for at least', MINIMUM_NUMBER_OF_YEARS,
               'years to qualify.')
 else:
-    print('You must earn at least $'
-          , format(MINIMUM_SALARY, ',.2f')
-          , ' per year to qualify.', sep='')
+    print('You must earn at least $',
+          format(MINIMUM_SALARY, ',.2f'),
+          ' per year to qualify.', sep='')

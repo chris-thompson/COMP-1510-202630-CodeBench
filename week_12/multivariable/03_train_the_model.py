@@ -1,33 +1,40 @@
 """
-First steps with ML!
+Step 3 of 5: fit the model. The call is identical to the one in simple/.
+
+One line of code learns from three columns as readily as from one. What
+changes is what comes out: coef_ now holds three numbers, one for each
+feature, saying how much that feature moves the prediction.
+
+With one feature the model was a straight line. With three it is a flat
+plane through a space we cannot draw, which is why step 5 reports numbers
+rather than a picture.
 """
 
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
+from ml_pipeline import (load_dataset, split_features_and_target,
+                         split_train_and_test, train_model)
+
+DATA_FILE = "sample_data.csv"
+FEATURE_NAMES = ("years of experience", "age", "education level")
 
 
 def main():
     """
     Drive the program.
     """
-    data = pd.read_csv('sample_data.csv')
-    print(data)
-    features = data.iloc[:, :-1].values
-    target = data.iloc[:, -1].values
-    print(features)
-    print(target)
+    data = load_dataset(DATA_FILE)
+    features, target = split_features_and_target(data)
     features_train, features_test, target_train, target_test = (
-        train_test_split(features, target, test_size=0.2, random_state=0))
-    print(features_train)
-    print(features_test)
-    print(target_train)
-    print(target_test)
-    regressor = LinearRegression()
-    regressor.fit(features_train, target_train)
-    print(regressor)
-    print(regressor.__doc__)
+        split_train_and_test(features, target))
+
+    model = train_model(features_train, target_train)
+
+    print("The model, fitted:")
+    print(f"  {model}\n")
+    print("One coefficient per feature, in the order the columns appear:")
+    for name, coefficient in zip(FEATURE_NAMES, model.coef_):
+        print(f"  {name:>20}: {coefficient:>12.2f}")
+    print(f"  {'intercept':>20}: {model.intercept_:>12.2f}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

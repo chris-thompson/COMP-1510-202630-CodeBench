@@ -5,7 +5,7 @@ def distance(x0, y0, x1, y1):
     """
     Calculate the distance between (x0, y0) and (x1, y1).
 
-    :param x0: a number representing a point's x-value
+    :param x0: A number representing a point's x-value
     :param y0: a number representing a point's y-value
     :param x1: a number representing a second point's x-value
     :param y1: a number representing a second point's y-value

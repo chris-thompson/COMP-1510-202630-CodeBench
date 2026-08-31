@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+</head>
+<body>
+    {% if name == "World" %}
+        <h1>Hello, stranger!</h1>
+    {% else %}
+        <h1>Hello, {{ name }}!</h1>
+    {% endif %}
+    <p>This heading was built by a Jinja2 template, not an f-string.</p>
+</body>
+</html>

@@ -2,11 +2,11 @@
 An instructor gives five-point quizzes that are assigned letter grades
 according to the scale: 5 -> A, 4 -> B, 3 -> C, 2 -> D, 1 -> F, 0 -> F.
 
-THis program takes a quiz score as input and prints the grade.
+This program takes a quiz score as input and prints the grade.
 
 The program works like this:
-    >> Enter the quiz score: 3
-    >> The letter grade is: C
+    Enter the quiz score: 3
+    The letter grade is: C
 """
 
 score = int(input("Enter the quiz score: "))
@@ -19,7 +19,7 @@ elif score == 3:
     grade = 'C'
 elif score == 2:
     grade = 'D'
-elif (score == 1) or (score == 0):
+elif score <= 1:
     grade = 'F'
 else:
     grade = 'Undefined'

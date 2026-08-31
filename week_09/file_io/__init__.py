@@ -18,6 +18,8 @@ In order for a directory to be recognized as a package, it must
 contain a file called __init__.py (we call it dunder init, or
 dunder init dunder where dunder means double underscore).
 
-This is a good place to define constants and create objects that
-are used by the entire package. It's usually very "thin"
+This is a good place to define constants and place values and
+structures in memory that are used by the entire package.
+
+It's usually very "thin"
 """

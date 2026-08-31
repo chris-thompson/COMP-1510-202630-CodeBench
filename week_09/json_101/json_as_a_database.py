@@ -1,7 +1,7 @@
 import json
 
 
-def get_stored_username():
+def get_stored_username() -> dict | None:
     """
     Get stored username if available.
     """
@@ -15,7 +15,7 @@ def get_stored_username():
         return username
 
 
-def get_new_username():
+def get_new_username() -> dict:
     """
     Prompt for and store a new username.
     """
@@ -26,7 +26,7 @@ def get_new_username():
     return username
 
 
-def greet_user():
+def greet_user() -> None:
     """
     Greet the user by name.
     """
@@ -35,7 +35,8 @@ def greet_user():
         print("Welcome back, " + username['name'] + "!")
     else:
         username = get_new_username()
-        print("We'll remember you when you come back, " + username['name'] + "!")
+        print("We'll remember you when you come back, "
+              + username['name'] + "!")
 
 
 def main():

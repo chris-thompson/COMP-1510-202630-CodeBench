@@ -2,7 +2,7 @@
 When we create a Python package in PyCharm, we are actually creating
 a directory in the project that is intended to contain Python modules.
 
-A module in Python is a text file that ends in .py. This text file is
+A module in Python is a text file that ends in .py. Such a file is
 usually called a Python source file. It contains Python code.
 
 For example, hello_world.py is the following things at the same time:

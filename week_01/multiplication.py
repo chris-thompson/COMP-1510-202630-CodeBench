@@ -2,7 +2,6 @@
 We multiply using the asterisk *
 """
 
-
 # Get the item's original price.
 original_price = float(input("Enter the item's original price: "))
 

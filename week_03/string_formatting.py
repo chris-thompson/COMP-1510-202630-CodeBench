@@ -18,14 +18,15 @@ def main():
     print(format_string.format('Reynolds', 'Ryan', 47))
 
     format_string = "{artist} sang {song} in {year}"
-    print(format_string.format(artist='Madonna', song='Material Girl', year=1984))
+    print(format_string.format(artist='Madonna', song='Material Girl',
+                               year=1984))
 
     print('|{:25}|'.format('25 characters width'))
-    print('|{:<25}|'.format('left aligned'))  # Same as not specifying an alignment
+    print('|{:<25}|'.format('left aligned'))  # Same as no alignment
     print('|{:>25}|'.format('right aligned'))
     print('|{:^25}|'.format('centered'))
 
-    # Can format numbers with comma as thousands separator
+    # Can format numbers with comma as thousands-separator
     print('{:,}'.format(1234567890))
     print('{:,}'.format(1234567890.0))
 

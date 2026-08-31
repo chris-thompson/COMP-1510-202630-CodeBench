@@ -1,15 +1,16 @@
-from unittest import TestCase
+"""
+A starting point for a new pytest test.
+
+Traditionally we begin with a test that fails -- it is the pass statement of
+the unit-testing world. We must put something in the test, but we have not
+written the real check yet, so we start with a failing assertion and then
+work toward one our code can satisfy.
+
+In PyCharm you can generate a test for a function by right-clicking the
+function and choosing Go To > Test. Set your default test runner to pytest
+first, under Settings > Tools > Python Integrated Tools > Testing.
+"""
 
 
-class Test(TestCase):
-    """
-    The easiest way to generate a unit test for a function in PyCharm is to right-click the function
-    and select Go To > Test.
-
-    Traditionally we start with a test that fails. That's what this is here. It's like the pass
-    statement of the unit test world. We have to put something in the test function. But we haven't
-    written any code yet. So start with a test that fails, and then strive to implement a test
-    that our tested code can pass.
-    """
-    def test_function(self):
-        self.fail()
+def test_function():
+    assert False  # TODO: replace with a real assertion

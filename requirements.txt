@@ -1,0 +1,9 @@
+pytest
+requests
+Flask
+matplotlib
+pandas
+scikit-learn
+rich
+python-dotenv
+firebase-admin

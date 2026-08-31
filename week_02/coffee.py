@@ -13,7 +13,8 @@ number_of_pounds = int(input("Enter pounds of coffee: \n"))
 
 # Calculate costs and charges
 subtotal = round(number_of_pounds * PRICE_PER_POUND, 2)
-shipping_charges = round((number_of_pounds * SHIPPING_COST_PER_POUND) + ONLINE_CHARGE, 2)
+shipping_charges = round((number_of_pounds * SHIPPING_COST_PER_POUND)
+                         + ONLINE_CHARGE, 2)
 tax = round((subtotal + shipping_charges) * TAX_RATE, 2)
 total = round(subtotal + shipping_charges + tax, 2)
 

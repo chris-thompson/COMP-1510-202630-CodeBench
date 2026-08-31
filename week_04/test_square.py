@@ -1,29 +1,30 @@
-from unittest import TestCase
+"""
+Unit-test the square function with pytest.
+
+pytest discovers any file named test_*.py and any function named test_*
+inside it. A test is just a function that makes one assertion. When an
+assertion fails, pytest shows developers the actual and expected values
+for us, so a plain assertion is all we need.
+"""
+
 from week_04.square import square
 
-class Test(TestCase):
-    def test_positive_integer(self):
-        expected = 4
-        actual = square(2)
-        self.assertEqual(expected, actual)
 
-    def test_negative_integer(self):
-        expected = 4
-        actual = square(-2)
-        self.assertEqual(expected, actual)
+def test_square_positive_integer():
+    assert square(2) == 4
 
-    def test_zero(self):
-        expected = 0
-        actual = square(0)
-        self.assertEqual(expected, actual)
 
-    def test_positive_float(self):
-        expected = 2.25
-        actual = square(1.5)
-        self.assertEqual(expected, actual)
+def test_square_negative_integer():
+    assert square(-2) == 4
 
-    def test_negative_float(self):
-        expected = 2.25
-        actual = square(-1.5)
-        self.assertEqual(expected, actual)
 
+def test_square_zero():
+    assert square(0) == 0
+
+
+def test_square_positive_float():
+    assert square(1.5) == 2.25
+
+
+def test_square_negative_float():
+    assert square(-1.5) == 2.25

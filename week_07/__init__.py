@@ -18,10 +18,12 @@ In order for a directory to be recognized as a package, it must
 contain a file called __init__.py (we call it dunder init, or
 dunder init dunder where dunder means double underscore).
 
-Later this term I will show you what we can put in here!
+Any statement in this file runs exactly once, when the package is
+first imported. That is why import_time below really does record the
+moment of import -- the assignment is an initialization statement.
 """
 
 import time
 
 CONSTANT_VALUE = "Diet Coke"
-execution_time = time.time()
+import_time = time.time()

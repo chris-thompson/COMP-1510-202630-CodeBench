@@ -10,9 +10,3 @@ def convert_to_celsius(fahrenheit):
     >>> convert_to_celsius(75)
     23.88888888888889
     """
-
-
-
-convert_to_celsius(80)
-convert_to_celsius(78.8)
-convert_to_celsius(10.4)

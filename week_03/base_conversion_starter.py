@@ -13,7 +13,8 @@ def main():
     base_new = int(input("What base (2 - 9)?: "))
     # calculate the max_number here
 
-    print("The max base 10 number to convert", "to that base is ", str(max_number))
+    print("The max base 10 number to convert", "to that base is ",
+          str(max_number))
 
     base_10_number = int(input("What number should we convert?: "))
 
@@ -25,12 +26,16 @@ def main():
 if __name__ == '__main__':
     """
     The main function is only invoked if we execute this module as a program.
-    We do that like this on the command line (or by clicking the green triangle in PyCharm!):
-    
+    We do that like this on the command line (or by clicking the green
+    triangle in PyCharm!):
+
     python3 base_conversion_starter.py
-    
-    What if this module contains code we want to use in other modules? Then we import it.
-    When we import it, the module is not given the name "__main__" by the interpreter.
+
+    What if this module contains code we want to use in other modules?
+    Then we import it.
+    When we import it, the module is not given the name "__main__" by
+    the interpreter.
     So this code in the if-statement is not executed when we import.
-    You should have a main() function. The main function is what drives the program."""
+    You should have a main() function. The main function is what drives
+    the program."""
     main()

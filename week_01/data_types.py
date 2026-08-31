@@ -2,7 +2,6 @@
 We can use the type function to find out what data type a variable is bound to.
 """
 
-
 this_variable = 1
 that = 1.0
 something_else = "1.0"

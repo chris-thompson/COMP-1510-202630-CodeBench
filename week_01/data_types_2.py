@@ -2,7 +2,6 @@
 We can use the type function to find out what data type a variable is bound to.
 """
 
-
 print(type(4))
 print(type(0))
 print(type(-11))

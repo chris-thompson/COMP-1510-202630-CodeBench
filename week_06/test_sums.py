@@ -1,63 +1,53 @@
 """
-Demonstrate how to unit test a function. We always try to identify the
-disjointed equivalency partitions.
-"""
+Unit-test running_sum with pytest.
 
-from unittest import TestCase
+We always try to identify the disjoint equivalence partitions: an empty
+list, a single item, and lists of negative, zero, positive, and mixed
+values. running_sum modifies its list in place, so each test builds a list,
+runs the function, and then asserts on the same list. Each test makes
+exactly one assertion using a plain assert.
+"""
 
 import week_06.sums as sums
 
 
-class Test(TestCase):
+def test_running_sum_empty():
+    values = []
+    sums.running_sum(values)
+    assert values == []
 
-    def test_running_sum_empty(self):
-        """Test an empty list."""
-        argument = []
-        expected = []
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument, "The list is empty.")
 
-    def test_running_sum_one_item(self):
-        """Test a one-item list."""
-        argument = [5]
-        expected = [5]
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument, "The list contains one item.")
+def test_running_sum_one_item():
+    values = [5]
+    sums.running_sum(values)
+    assert values == [5]
 
-    def test_running_sum_two_items(self):
-        """Test a two-item list."""
-        argument = [2, 5]
-        expected = [2, 7]
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument, "The list contains two items.")
 
-    def test_running_sum_multi_negative(self):
-        """Test a list of negative values."""
-        argument = [-1, -5, -3, -4]
-        expected = [-1, -6, -9, -13]
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument, "The list contains only negative values.")
+def test_running_sum_two_items():
+    values = [2, 5]
+    sums.running_sum(values)
+    assert values == [2, 7]
 
-    def test_running_sum_multi_zeros(self):
-        """Test a list of zeros."""
-        argument = [0, 0, 0, 0]
-        expected = [0, 0, 0, 0]
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument, "The list contains only zeros.")
 
-    def test_running_sum_multi_positive(self):
-        """Test a list of positive values."""
-        argument = [4, 2, 3, 6]
-        expected = [4, 6, 9, 15]
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument, "The list contains only positive values.")
+def test_running_sum_multi_negative():
+    values = [-1, -5, -3, -4]
+    sums.running_sum(values)
+    assert values == [-1, -6, -9, -13]
 
-    def test_running_sum_multi_mix(self):
-        """Test a list containing mixture of negative values, zeros and
-        positive values."""
-        argument = [4, 0, 2, -5, 0]
-        expected = [4, 4, 6, 1, 1]
-        sums.running_sum(argument)
-        self.assertEqual(expected, argument,
-                         "The list contains a mixture of negative values, zeros and"
-                         + "positive values.")
+
+def test_running_sum_multi_zeros():
+    values = [0, 0, 0, 0]
+    sums.running_sum(values)
+    assert values == [0, 0, 0, 0]
+
+
+def test_running_sum_multi_positive():
+    values = [4, 2, 3, 6]
+    sums.running_sum(values)
+    assert values == [4, 6, 9, 15]
+
+
+def test_running_sum_multi_mix():
+    values = [4, 0, 2, -5, 0]
+    sums.running_sum(values)
+    assert values == [4, 4, 6, 1, 1]

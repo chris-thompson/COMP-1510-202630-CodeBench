@@ -9,7 +9,7 @@ def get_user_command():
 
 
 def some_function():
-    """replace this with your function, and add more if you need to."""
+    """replace this with your function and add more if you need to."""
     pass
 
 

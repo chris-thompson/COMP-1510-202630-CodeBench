@@ -4,7 +4,7 @@ Let's play with exceptions!
 import math
 
 
-def function_can_throw(number):
+def function_can_throw(number: int) -> int:
     """
     Help demonstrate how to use exception handling.
 
