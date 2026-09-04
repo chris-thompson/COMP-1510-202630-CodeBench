@@ -38,7 +38,9 @@ def sparse_add(vector_one, vector_two):
 
 
 def main():
-    """Drive the program."""
+    """
+    Drive the program.
+    """
     print(sparse_add({1: 1, "length": 400}, {2: 1, "length": 400}))
 
 
